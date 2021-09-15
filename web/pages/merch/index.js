@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Cart from "../../components/Cart";
-// import CartSummary from "../../components/CartSummary";
+import CartSummary from "../../components/CartSummary";
 import Products from "../../components/Products";
 import { client } from "../../lib/sanity/client";
 import { merchQuery } from "../../lib/sanity/merchQuery";
@@ -16,11 +16,11 @@ const Merch = ({ products }) => {
       </p>
       <Cart>
         <Products products={products} />
-        {/* <CartSummary /> */}
+        { <CartSummary /> }
       </Cart>
       <Link href="/">
         <a>Back Home</a>
-      </Link>
+      </Link >
     </main>
   );
 };
