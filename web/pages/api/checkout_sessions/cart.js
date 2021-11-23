@@ -2,6 +2,7 @@ import { validateCartItems } from "use-shopping-cart/utilities";
 import Stripe from "stripe";
 import { client } from "../../../lib/sanity/client";
 import { merchQuery } from "../../../lib/sanity/merchQuery";
+// Possibly OOD
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY, {
   // https://github.com/stripe/stripe-node#configuration
   apiVersion: "2020-03-02",
